@@ -213,6 +213,9 @@ hr {
 }
 
 /* About section */
+.about{
+  height: 120vh;
+}
 .about .about-content,
 .projects .projects-content {
   display: flex;
@@ -822,7 +825,8 @@ Footer {
   }
   .carrer{
     height: 270vh;
-  } */
+  } 
+    */
   .education{
     height: 110vh;
   }
@@ -852,8 +856,12 @@ Footer {
   .navBar .menu {
     left: 0%;
   } */
-
+  
   .navBar .menu {
+    display: none;
+}
+
+  /* .navBar .menu {
     position: fixed;
     height: 200vh;
     width: 100%;
@@ -862,24 +870,24 @@ Footer {
     background-color: #111;
     text-align: center;
     transition: height 0.3s step-end;
-  }
+  } */
 
-  .navBar .menu.active {
+  /* .navBar .menu.active {
     left: 0;
-  }
-  .navBar .menu li {
+  } */
+  /* .navBar .menu li {
     display: block;
     padding-top: 70px;
-  }
-  .navBar .menu li a {
+  } */
+  /* .navBar .menu li a {
     display: inline-block;
     font-size: 24px;
     font-weight: 500;
     margin-left: 25px;
-  }
-  .navBar .menu li a:hover {
+  } */
+  /* .navBar .menu li a:hover {
     color: var(--primary-color);
-  }
+  } */
   .max-width {
     padding: 0 25px;
   }
