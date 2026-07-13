@@ -4,122 +4,102 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-Syed Tabrez</title>
+    <title>Syed Tabrez Pasha S — Full Stack &amp; Flutter Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Syed Tabrez Pasha S — Full Stack &amp; Flutter Developer based in Bengaluru. Founder of Sameen Collections."
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"  type="text/javascript"></script>
-
-    
   </head>
 
   <body>
-    <!-- Navigation Section -->
-    <!-- <nav class="navBar">
-      <div class="max-width">
-        <div class="logo">
-          <a href="./index.html">Portfo<span>lio.</span></a>
-        </div>
-        <ul class="menu" >
-          <li class="nav-btn"><a href="#homePage" >Home</a></li>
-          <li class="nav-btn"><a href="#about">About</a></li>
-          <li class="nav-btn"><a href="#carrer">Carrer</a></li>
-          <li class="nav-btn"><a href="#education">Qualification</a></li>
-          <li class="nav-btn"><a href="#skills">Skills</a></li>
-          <li class="nav-btn"><a href="#projects">Projects</a></li>
-          <li class="nav-btn"><a href="#contact">Contact</a></li>
-        </ul>
-        <label class="class-menu-btn"  >
-          <i class="fa fa-bars" >  </i>
-        </label>
-      </div>
-    </nav> -->
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-        <!-- Navigation Section -->
-        <nav class="navBar">
-          <div class="max-width">
-            <div class="logo">
-              <a href="./index.html">Portfo<span>lio.</span></a>
-            </div>
-    
-            <!-- <input type="checkbox" id="menu-btn-click" checked="true">
-            <label class="class-menu-btn" for="menu-btn-click">
-              <i class="fa fa-bars">  </i>
-            </label> -->
-            
-            <div class="mobile-menu-btn">
-              <i class="fa fa-bars"></i>
-            </div>
+    <!-- Navigation -->
+    <header class="navBar" id="navBar">
+      <div class="max-width nav-inner">
+        <a class="logo" href="#homePage">Tabrez<span>.</span></a>
 
-            <ul class="menu" >
-              <li class="nav-btn"><a href="#homePage" >Home</a></li>
-              <li class="nav-btn"><a href="#about">About</a></li>
-              <li class="nav-btn"><a href="#carrer">Carrer</a></li>
-              <li class="nav-btn"><a href="#education">Qualification</a></li>
-              <li class="nav-btn"><a href="#skills">Skills</a></li>
-              <li class="nav-btn"><a href="#projects">Projects</a></li>
-              <li class="nav-btn"><a href="#contact">Contact</a></li>
-            </ul>
-
-          </div>
-          <!-- <input type="checkbox" id="sidebar-active">
-          <label for="sidebar-active">
-            <label class="class-menu-btn"  >
-              <i class="fa fa-bars" >  </i>
-          </label> -->
+        <nav>
+          <ul class="menu" id="menu">
+            <li class="nav-btn"><a href="#homePage" class="active">Home</a></li>
+            <li class="nav-btn"><a href="#about">About</a></li>
+            <li class="nav-btn"><a href="#carrer">Career</a></li>
+            <li class="nav-btn"><a href="#education">Qualification</a></li>
+            <li class="nav-btn"><a href="#skills">Skills</a></li>
+            <li class="nav-btn"><a href="#projects">Projects</a></li>
+            <li class="nav-btn"><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
 
-    <!-- Main-Page Section -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero / Home -->
     <section class="homePage" id="homePage">
-      <div class="layout">
-        <a href="https://www.facebook.com/syed.tabrez.3382/" target="_blank"
-          ><img src="./Media/logo_facebook.png" alt="Facebook-Logo"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/syed-tabrez-pasha-s-295b8a114/"
-          target="_blank"
-          ><img src="./Media/logo_linkedIn.png" alt="LinkedIn-Logo"
-        /></a>
-        <a href="https://twitter.com/tabrezcool6" target="_blank"
-          ><img src="./Media/logo_twitter.png" alt="Twitter-Logo"
-        /></a>
-        <a href="https://github.com/tabrezcool6" target="_blank"
-          ><img src="./Media/logo_gitHub.png" alt="GitHub-logo"
-        /></a>
+      <div class="hero-glow"></div>
+      <div class="social-rail">
+        <a href="https://www.linkedin.com/in/syed-tabrez-pasha-s-295b8a114/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/tabrezcool6" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com/tabrezcool6" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/syed.tabrez.3382/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <span class="rail-line"></span>
       </div>
 
-      <div class="max-width">
+      <div class="max-width hero-inner">
         <div class="home-content">
-          <div class="text-1">Hello, my name is</div>
-          <div class="text-2">Syed Tabrez Pasha S</div>
-          <div class="text-3">I'm a <span>Full Stack Developer</span></div>
-
-          <!-- <button id="download-cv">Download CV</button> -->
-          <!-- <button id="contact-me" href="#contact">Contact Me</button> -->
+          <div class="text-1 reveal">Hello, my name is</div>
+          <h1 class="text-2 reveal">Syed Tabrez Pasha S</h1>
+          <div class="text-3 reveal">
+            I'm a <span>Full Stack Developer</span>
+          </div>
+          <p class="hero-sub reveal">
+            Founder &amp; CEO of Sameen Collections. I build performant mobile
+            and web experiences with Flutter, Node.js and clean design.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary">View my work</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
         </div>
 
-        <div><img src="./Media/My_Picture.png" alt="Syed Picture" /></div>
+        <div class="hero-photo reveal">
+          <div class="photo-ring"></div>
+          <img src="./Media/syed-profile-pic.png" alt="Syed Tabrez Pasha S" />
+          <!-- <img src="./Media/My_Picture.png" alt="Syed Tabrez Pasha S" /> -->
+        </div>
       </div>
-    </section>
-    <hr />
 
-    <!-- About Section -->
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- About -->
     <section class="about" id="about">
       <div class="max-width">
-        <h2 class="title">About me</h2>
+        <h2 class="title reveal" data-sub="who I am">About me</h2>
         <div class="about-content">
-          <div class="column left">
-            <img src="./Media/circle_suit_4.png" alt="My Picture" />
+          <div class="column left reveal">
+            <img src="./Media/My_Picture.png" alt="Syed Tabrez portrait" />
+            <!-- <img src="./Media/circle_suit_4.png" alt="Syed Tabrez portrait" /> -->
           </div>
           <div class="column right">
-            <div class="text">I'm Syed Tabrez Pasha S and I'm a Flutter Developer.</div>
-            <p>
+            <div class="text reveal">
+              I'm Syed Tabrez Pasha S and I'm a Flutter Developer.
+            </div>
+            <p class="reveal">
               I live in Bengaluru. I completed my Bachelor of Engineering
               (Electronics and Communication) from Sambhram Institute of
               Technology. I started coding in early 2019 and got a hang of it.
@@ -128,391 +108,361 @@
               <a
                 href="https://play.google.com/store/apps/details?id=com.xsar.handwriter"
                 target="_blank"
+                rel="noopener"
                 >Handwriter: handwriting app</a
               >
-              is one. Over the time, my interest kept increasing in developing
-              field and to explore further I started Web Development. Apart from
-              coding, I mostly like to cook and eat, watch series, travel & read
-              and write and listen to good music.
+              is one. Over the time, my interest kept increasing in the
+              development field and to explore further I started Web
+              Development. Apart from coding, I mostly like to cook and eat,
+              watch series, travel &amp; read and write and listen to good
+              music.
             </p>
+            <div class="about-stats reveal">
+              <div class="stat">
+                <span class="stat-num" data-count="5">0</span><span>+</span>
+                <small>Years coding</small>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-count="4">0</span><span>+</span>
+                <small>Featured projects</small>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-count="15">0</span><span>+</span>
+                <small>Years in business</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <hr/>
 
-    
-
-    
-    
-
-    <!-- Carrer Section -->
+    <!-- Career -->
     <section class="carrer" id="carrer">
       <div class="max-width">
-        <h2 class="title">Carrer</h2>
+        <h2 class="title reveal" data-sub="where I work">Career</h2>
 
-        <div class="screen-center">
-          <div class="carrer-content">
-            <div class="column">
-              <!-- /// -->
-              <div class="carrer_heading">1. Founder and CEO</div>
-              <div class="carrer-content2">
-                <div class="carrer1">
-                  <div class="carrer-row">
-                    <div>
-                      <a class="text-1" href="https://www.sameens.com" target="_blank">Sameen Collections</a>
-                    </div>
-                    <div  class="text-3">Sameen Collections is your go-to online destination for premium women's bags, clutches and other accessories. Our website and mobile app offer a curated collection of stylish, high-quality accessories designed to complement every woman's unique style and needs. Whether you're looking for the perfect evening clutch, an everyday handbag, or something in between, we provide a seamless shopping experience with a diverse range of options to suit all occasions.<br>With a focus on quality, craftsmanship, and trendy designs, we aim to empower women to express their personal style confidently. Our user-friendly platform ensures easy browsing, secure checkout, and fast delivery, bringing the best of fashion directly to your doorstep.<br><br>Skills: Flutter · PHP · SQL Database · Software Development · Project Management · API Integration · State Management</div>
-                    <div class="carrer-inner-row">
-                      <div class="text-2">Bengaluru, Karnataka</div>
-                      <div class="text-2">Oct 2023 - Present</div>
-                    </div>
-                  </div>
-                </div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <a class="text-1" href="https://www.sameens.com" target="_blank" rel="noopener">Founder &amp; CEO — Sameen Collections</a>
+                <span class="tl-date">Oct 2023 – Present</span>
               </div>
-              
-              <br>
-
-               <!-- /// -->
-               <div class="carrer_heading">2. Flutter Developer</div>
-               <div class="carrer-content2">
-                 <div class="carrer1">
-                   <div class="carrer-row">
-                     <div>
-                       <a class="text-1" href="http://www.ibuild.in" target="_blank">iBuild Software Solutions · Full-time</a>
-                     </div>
-                     <div  class="text-3">* I have successfully integrated ERP systems into mobile applications. The app contains features like updating attendance, real time location tracking, admin access, background tasks, getting attendance details etc.br <br>* I have developed an integrated system, known as the Intranet System, which facilitates real time communication among users within a closed network using socket.IO<br><br>Skills: Flutter · Software Development · Project Management · API Integration · State Management · Teamwork</div>
-                     <div class="carrer-inner-row">
-                       <div class="text-2">Bengaluru, Karnataka</div>
-                       <div class="text-2">July 2022 - Present</div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-
-              <br>
-              
-               <!-- /// -->
-               <div class="carrer_heading">3. Sales Associate</div>
-               <div class="carrer-content2">
-                 <div class="carrer1">
-                   <div class="carrer-row">
-                     <div>
-                       <div class="text-1">Sameer Collections · Part-time</div>
-                     </div>
-                     <div  class="text-3">I have accumulated over fifteen years of experience in sales at a retail establishment operated by my family. This business specializes in the retail sale of men's clothing, school bags, travel bags, women's handbags, clutches, men's accessories, and handlooms.
-                      <br><br>
-                      Skills: Sales · Sales Management · Sales Operations · Direct Sales · Sales Processes · Retail Sales</div>
-                     <div class="carrer-inner-row">
-                       <div class="text-2">Bengaluru, Karnataka</div>
-                       <div class="text-2">Jan 2010 - Present</div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-
-               <br>
-               
-                <!-- /// -->
-                <div class="carrer_heading">4. Flutter Developer</div>
-                <div class="carrer-content2">
-                  <div class="carrer1">
-                    <div class="carrer-row">
-                      <div>
-                        <a class="text-1" href="https://www.thecompanycheck.com/company/madvistara-private-limited/U72900KA2022PTC159416" target="_blank">Madvistara Software Solutions · Full-time</a>
-                      </div>
-                      <div  class="text-3">
-                        <!-- I have accumulated over fifteen years of experience in sales at a retail establishment operated by my family. This business specializes in the retail sale of men's clothing, school bags, travel bags, women's handbags, clutches, men's accessories, and handlooms.
-                       <br><br> -->
-                       Skills: Firebase · Postman API · Flutter · API Integration · Database</div>
-                      <div class="carrer-inner-row">
-                        <div class="text-2">Bengaluru, Karnataka</div>
-                        <div class="text-2">Jan 2022 - June 2022</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br>
-                
-                 <!-- /// -->
-                 <div class="carrer_heading">5. Front End Developer Trainee</div>
-                 <div class="carrer-content2">
-                   <div class="carrer1">
-                     <div class="carrer-row">
-                       <div>
-                         <a class="text-1" href="https://www.linkedin.com/company/reformx/posts/?feedView=all" target="_blank">REFORMX · Internship</a>
-                       </div>
-                       <div  class="text-3">I havesuccessfully completed an Internship and gained a hands on experience in developing websites using HTML, CSS, Bootstrap, JavaScript. Also have completed 3-4 Projects based on this.<br><br>Skills: Bootstrap · HTML5 · Front-End Development · JavaScript · Cascading Style Sheets (CSS)</div>
-                       <div class="carrer-inner-row">
-                         <div class="text-2">Bengaluru, Karnataka</div>
-                         <div class="text-2">Sept 2021 - Jan 2022</div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-   
-  
- 
- 
+              <div class="tl-place">Bengaluru, Karnataka</div>
+              <p class="text-3">
+                Sameen Collections is your go-to online destination for premium
+                women's bags, clutches and other accessories. Our website and
+                mobile app offer a curated collection of stylish, high-quality
+                accessories designed to complement every woman's unique style
+                and needs. Whether you're looking for the perfect evening
+                clutch, an everyday handbag, or something in between, we provide
+                a seamless shopping experience with a diverse range of options
+                to suit all occasions.<br />With a focus on quality,
+                craftsmanship, and trendy designs, we aim to empower women to
+                express their personal style confidently. Our user-friendly
+                platform ensures easy browsing, secure checkout, and fast
+                delivery, bringing the best of fashion directly to your
+                doorstep.
+              </p>
+              <div class="tl-tags">
+                <span>Flutter</span><span>PHP</span><span>SQL</span><span>Software Development</span><span>Project Management</span><span>API Integration</span><span>State Management</span>
+              </div>
             </div>
           </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <a class="text-1" href="http://www.ibuild.in" target="_blank" rel="noopener">Flutter Developer — iBuild Software Solutions</a>
+                <span class="tl-date">Jul 2022 – Present</span>
+              </div>
+              <div class="tl-place">Bengaluru, Karnataka · Full-time</div>
+              <p class="text-3">
+                Successfully integrated ERP systems into mobile applications.
+                The app contains features like updating attendance, real-time
+                location tracking, admin access, background tasks, getting
+                attendance details, etc.<br />Developed an integrated system,
+                known as the Intranet System, which facilitates real-time
+                communication among users within a closed network using
+                Socket.IO.
+              </p>
+              <div class="tl-tags">
+                <span>Flutter</span><span>Software Development</span><span>Project Management</span><span>API Integration</span><span>State Management</span><span>Teamwork</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <span class="text-1">Sales Associate — Sameer Collections</span>
+                <span class="tl-date">Jan 2010 – Present</span>
+              </div>
+              <div class="tl-place">Bengaluru, Karnataka · Part-time</div>
+              <p class="text-3">
+                Accumulated over fifteen years of experience in sales at a
+                retail establishment operated by my family. This business
+                specializes in the retail sale of men's clothing, school bags,
+                travel bags, women's handbags, clutches, men's accessories, and
+                handlooms.
+              </p>
+              <div class="tl-tags">
+                <span>Sales</span><span>Sales Management</span><span>Sales Operations</span><span>Direct Sales</span><span>Retail Sales</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <a class="text-1" href="https://www.thecompanycheck.com/company/madvistara-private-limited/U72900KA2022PTC159416" target="_blank" rel="noopener">Flutter Developer — Madvistara Software Solutions</a>
+                <span class="tl-date">Jan 2022 – Jun 2022</span>
+              </div>
+              <div class="tl-place">Bengaluru, Karnataka · Full-time</div>
+              <p class="text-3">
+                Built and integrated mobile app features with cloud services and
+                REST APIs, focusing on data persistence and reliable API
+                communication.
+              </p>
+              <div class="tl-tags">
+                <span>Firebase</span><span>Postman API</span><span>Flutter</span><span>API Integration</span><span>Database</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <a class="text-1" href="https://www.linkedin.com/company/reformx/posts/?feedView=all" target="_blank" rel="noopener">Front End Developer Trainee — REFORMX</a>
+                <span class="tl-date">Sep 2021 – Jan 2022</span>
+              </div>
+              <div class="tl-place">Bengaluru, Karnataka · Internship</div>
+              <p class="text-3">
+                Successfully completed an internship and gained hands-on
+                experience in developing websites using HTML, CSS, Bootstrap and
+                JavaScript. Completed 3–4 projects based on this.
+              </p>
+              <div class="tl-tags">
+                <span>Bootstrap</span><span>HTML5</span><span>Front-End Development</span><span>JavaScript</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <hr />
-    
 
-    <!-- Education Section -->
+    <!-- Qualification -->
     <section class="education" id="education">
       <div class="max-width">
-        <h2 class="title">Qualification</h2>
+        <h2 class="title reveal" data-sub="what I studied">Qualification</h2>
 
-        <div class="screen-center">
-          <div class="education-content">
-            <div class="column">
-              <div class="edu_heading">Education</div>
-  
-              <div class="education-content2">
-                <div class="edu1">
-                  <img src="./Media/education_template.png" alt="" />
-                  <div class="edu-row">
-                    <div>
-                      <div class="text-1">Bachelor of Engineering (ECE)</div>
-                      <div class="text-2">Sambhram Institue of Technology</div>
-                    </div>
-                    <div class="inner-row">
-                      <div class="text-3">2016-2021</div>
-                      <div class="text-4">6.3 CGPA</div>
-                    </div>
+        <div class="education-content">
+          <div class="column reveal">
+            <div class="edu_heading"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+            <div class="education-content2">
+              <div class="edu1">
+                <div class="edu-row">
+                  <div>
+                    <div class="text-1">Bachelor of Engineering (ECE)</div>
+                    <div class="text-2">Sambhram Institute of Technology</div>
                   </div>
-                </div>
-  
-                <div class="edu1">
-                  <img src="./Media/education_template.png" alt="" />
-                  <div class="edu-row">
-                    <div>
-                      <div class="text-1">
-                        Pre University College (Science, PCME)
-                      </div>
-                      <div class="text-2">Mahesh PU College</div>
-                    </div>
-  
-                    <div class="inner-row">
-                      <div class="text-3">2014-2016</div>
-                      <div class="text-4">76.58%</div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="edu1">
-                  <img src="./Media/education_template.png" alt="" />
-                  <div class="edu-row">
-                    <div>
-                      <div class="text-1">
-                        Secondary School Leaving Certificate
-                      </div>
-                      <div class="text-2">Kiran High School</div>
-                    </div>
-                    <div class="inner-row">
-                      <div class="text-3">2002-2014</div>
-                      <div class="text-4">88.64%</div>
-                    </div>
+                  <div class="inner-row">
+                    <div class="text-3">2016–2021</div>
+                    <div class="text-4">6.3 CGPA</div>
                   </div>
                 </div>
               </div>
-            </div>
-  
-            <div class="column">
-              <div class="edu_heading">Internship and Experience</div>
-  
-              <div class="education-content2">
-                <div class="edu1">
-                  <img src="./Media/education_template.png" alt="" />
-                  <div class="edu-row">
-                    <div>
-                      <div class="text-1">Front End Development Trainee</div>
-                      <div class="text-2">ReformX Consulting Private Limited</div>
-                    </div>
-                    <div class="text-3">2021</div>
+
+              <div class="edu1">
+                <div class="edu-row">
+                  <div>
+                    <div class="text-1">Pre University College (Science, PCME)</div>
+                    <div class="text-2">Mahesh PU College</div>
+                  </div>
+                  <div class="inner-row">
+                    <div class="text-3">2014–2016</div>
+                    <div class="text-4">76.58%</div>
                   </div>
                 </div>
-  
-                <div class="edu1">
-                  <img src="./Media/education_template.png" alt="" />
-                  <div class="edu-row">
-                    <div>
-                      <div class="text-1">Internet of Things(IoT)</div>
-                      <div class="text-2">ExpertsHub</div>
-                    </div>
-                    <div class="text-3">2019</div>
+              </div>
+
+              <div class="edu1">
+                <div class="edu-row">
+                  <div>
+                    <div class="text-1">Secondary School Leaving Certificate</div>
+                    <div class="text-2">Kiran High School</div>
                   </div>
-                </div>
-  
-                <div class="edu1">
-                  <img src="./Media/education_template.png" alt="" />
-                  <div class="edu-row">
-                    <div>
-                      <div class="text-1">
-                        Field Technician-Computing and Periferals
-                      </div>
-                      <div class="text-2">Rooman Technologies(PMKVY)</div>
-                    </div>
-                    <div class="text-3">2018</div>
+                  <div class="inner-row">
+                    <div class="text-3">2002–2014</div>
+                    <div class="text-4">88.64%</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="column reveal">
+            <div class="edu_heading"><i class="fa-solid fa-briefcase"></i> Internship &amp; Experience</div>
+            <div class="education-content2">
+              <div class="edu1">
+                <div class="edu-row">
+                  <div>
+                    <div class="text-1">Front End Development Trainee</div>
+                    <div class="text-2">ReformX Consulting Private Limited</div>
+                  </div>
+                  <div class="text-3">2021</div>
+                </div>
+              </div>
+
+              <div class="edu1">
+                <div class="edu-row">
+                  <div>
+                    <div class="text-1">Internet of Things (IoT)</div>
+                    <div class="text-2">ExpertsHub</div>
+                  </div>
+                  <div class="text-3">2019</div>
+                </div>
+              </div>
+
+              <div class="edu1">
+                <div class="edu-row">
+                  <div>
+                    <div class="text-1">Field Technician — Computing &amp; Peripherals</div>
+                    <div class="text-2">Rooman Technologies (PMKVY)</div>
+                  </div>
+                  <div class="text-3">2018</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <hr />
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section class="skills" id="skills">
       <div class="max-width">
-        <h2 class="title">My Skills</h2>
+        <h2 class="title reveal" data-sub="what I know">My Skills</h2>
         <div class="skills-content">
-          <div class="columns">
+          <div class="columns reveal">
             <div class="bars">
               <div class="info"><span>Flutter</span><span>90%</span></div>
-              <div class="line html"></div>
+              <div class="line"><span data-width="90%"></span></div>
             </div>
-
             <div class="bars">
               <div class="info"><span>PHP, SQL</span><span>60%</span></div>
-              <div class="line android"></div>
+              <div class="line"><span data-width="60%"></span></div>
             </div>
-
-
             <div class="bars">
               <div class="info"><span>HTML, CSS, JS</span><span>70%</span></div>
-              <div class="line js"></div>
+              <div class="line"><span data-width="70%"></span></div>
             </div>
-
             <div class="bars">
               <div class="info"><span>Node.JS</span><span>80%</span></div>
-              <div class="line react"></div>
+              <div class="line"><span data-width="80%"></span></div>
             </div>
           </div>
 
-          <div class="columns">
+          <div class="columns reveal">
             <div class="bars">
               <div class="info"><span>Java</span><span>70%</span></div>
-              <div class="line java"></div>
+              <div class="line"><span data-width="70%"></span></div>
             </div>
-
             <div class="bars">
               <div class="info"><span>Android</span><span>60%</span></div>
-              <div class="line android"></div>
+              <div class="line"><span data-width="60%"></span></div>
             </div>
-
             <div class="bars">
               <div class="info"><span>XML</span><span>80%</span></div>
-              <div class="line xml"></div>
+              <div class="line"><span data-width="80%"></span></div>
             </div>
-
             <div class="bars">
               <div class="info"><span>Git</span><span>80%</span></div>
-              <div class="line git"></div>
+              <div class="line"><span data-width="80%"></span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <hr />
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section class="projects" id="projects">
       <div class="max-width">
-        <h2 class="title">My Projects</h2>
+        <h2 class="title reveal" data-sub="what I made">My Projects</h2>
         <div class="projects-content">
+          <a class="card reveal" href="https://www.sameens.com" target="_blank" rel="noopener">
+            <div class="box">
+              <div class="card-img"><img src="./Media/project4.png" alt="Sameen Collections" /></div>
+              <h3>Sameen Collections <span>Flutter</span></h3>
+              <p>A mobile and web e-commerce app built using Flutter and an SQL database, delivering a seamless shopping experience.</p>
+              <span class="card-link">Visit site <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
 
-          <div class="card">
+          <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.xsar.handwriter" target="_blank" rel="noopener">
             <div class="box">
-              <a href="https://www.sameens.com" target="_blank"
-              ><img src="./Media/project4.png" alt="" /></a>
-              <div class="text"><h3>Sameen Collections<br> (Flutter)</h3></div>
-              <p>The Mobile and Web App is built using Flutter, SQL Database and is built as a E-Commerce App.
-              </p>
+              <div class="card-img"><img src="./Media/project1.png" alt="Handwriter" /></div>
+              <h3>Handwriter <span>Android</span></h3>
+              <p>A font-converter app that turns camera or gallery images into text files. Built with Java, XML, Firebase, Photoshop and Adobe XD.</p>
+              <span class="card-link">View on Play Store <i class="fa-solid fa-arrow-right"></i></span>
             </div>
-          </div>
+          </a>
 
-          <div class="card">
+          <a class="card reveal" href="https://github.com/tabrezcool6/iTask-ToDoListApp" target="_blank" rel="noopener">
             <div class="box">
-              <a href="https://play.google.com/store/apps/details?id=com.xsar.handwriter" target="_blank"
-                ><img src="./Media/project1.png" alt="Project 1"
-              /></a>
-              <div class="text"><h3>Handwriter: Handwriting app <br> (Android)</h3></div>
-              <p>
-                Handwriter is font converter app which uses image from camera,
-                imported from gallery to convert it into text file. It is built on Android Studio Framework. It is developed using Java, XML, Firebase, Photoshop, Adobe XD.
-              </p>
+              <div class="card-img"><img src="./Media/project2.png" alt="iTask" /></div>
+              <h3>iTask — To Do List <span>Android</span></h3>
+              <p>An Android app to plan daily tasks, with user login/logout and tasks stored in a realtime Firebase database.</p>
+              <span class="card-link">View on GitHub <i class="fa-solid fa-arrow-right"></i></span>
             </div>
-          </div>
-          
-          <div class="card">
-            <div class="box">
-              <a href="https://github.com/tabrezcool6/iTask-ToDoListApp" target="_blank"
-              ><img src="./Media/project2.png" alt="" /></a>
-              <div class="text"><h3>iTask - To Do List Application<br>(Android)</h3></div>
-              <p>The application is developed using Android Studio to plan daily tasks you don’t want  to miss out. It has User Login and Log-out functionality implemented. The user can add their tasks and it gets stored in Realtime Firebase Database. 
-              </p>
-            </div>
-          </div>
+          </a>
 
-          <div class="card">
+          <a class="card reveal" href="https://github.com/tabrezcool6/Connect--A-Web-Chat-API" target="_blank" rel="noopener">
             <div class="box">
-              <a href="https://github.com/tabrezcool6/Connect--A-Web-Chat-API" target="_blank"
-              ><img src="./Media/project3.png" alt="" /></a>
-              <div class="text"><h3>Connect - A Web Chat API<br> (Website)</h3></div>
-              <p>The API is built using JavaScript, Node Server & Socket.IO and is built to allow the users to communicate in real-time using easily accessible web interfaces.
-              </p>
+              <div class="card-img"><img src="./Media/project3.png" alt="Connect" /></div>
+              <h3>Connect — Web Chat API <span>Website</span></h3>
+              <p>A real-time chat API built with JavaScript, Node server and Socket.IO, enabling users to communicate through accessible web interfaces.</p>
+              <span class="card-link">View on GitHub <i class="fa-solid fa-arrow-right"></i></span>
             </div>
-          </div>
-          <!-- 
-            <div class="card">
-              <div class="box">
-                <i class="fas fas-1"><img src="./Media/project1.png" alt=""></i>
-                <div class="text"><h3></h3></div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate rerum doloremque provident beatae soluta aspernatur!</p>
-              </div>
-            </div> -->
+          </a>
         </div>
       </div>
     </section>
-    <hr />
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section class="contact" id="contact">
       <div class="max-width">
-        <h2 class="title">Contact Me</h2>
+        <h2 class="title reveal" data-sub="get in touch">Contact Me</h2>
         <div class="contact-content">
-          <div class="column left">
+          <div class="column left reveal">
             <div class="text">Get in touch</div>
             <p>
-              If you need to know more details about me or have any questions, please feel free to drop me a message. I'll get back to you as soon as I can.
+              If you need to know more details about me or have any questions,
+              please feel free to drop me a message. I'll get back to you as
+              soon as I can.
             </p>
             <div class="icons">
               <div class="row">
-                <i class="fa fa-user"
-                  ></i>
+                <i class="fa-solid fa-user"></i>
                 <div class="info">
                   <div class="head">Name</div>
                   <div class="sub-title">Syed Tabrez Pasha S</div>
                 </div>
               </div>
-
               <div class="row">
-                <i class="fa fa-user"
-                  ></i>
+                <i class="fa-solid fa-location-dot"></i>
                 <div class="info">
                   <div class="head">Address</div>
                   <div class="sub-title">Bangalore, Karnataka</div>
                 </div>
               </div>
-
               <div class="row">
-                <i class="fa fa-user"
-                  ></i>
+                <i class="fa-solid fa-envelope"></i>
                 <div class="info">
                   <div class="head">E-mail</div>
                   <div class="sub-title">tabrezcool6@gmail.com</div>
@@ -521,36 +471,25 @@
             </div>
           </div>
 
-          <div class="column right">
+          <div class="column right reveal">
             <div class="text">Message me</div>
             <form action="#">
-
               <div class="fields">
                 <div class="field name">
                   <input type="text" placeholder="Enter your name" required />
                 </div>
                 <div class="field email">
-                  <input
-                    type="email"
-                    placeholder="Enter your e-mail"
-                    required
-                  />
+                  <input type="email" placeholder="Enter your e-mail" required />
                 </div>
               </div>
-
               <div class="field">
                 <input type="text" placeholder="Subject" required />
               </div>
               <div class="field textarea">
-                <textarea
-                  cols="30"
-                  rows="10"
-                  placeholder="Describe project..."
-                  required
-                ></textarea>
+                <textarea cols="30" rows="10" placeholder="Describe project..." required></textarea>
               </div>
               <div class="button">
-                <button type="submit">Send message</button>
+                <button type="submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
               </div>
             </form>
           </div>
@@ -558,13 +497,20 @@
       </div>
     </section>
 
-    <!-- Footer Section -->
-    <Footer>
-      <div class="footer"></div>
-      <div class="max-width">
-        <h2 class="footerTitle">© Syed Tabrez Pasha S. All Rights Reserved</h2>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="max-width footer-inner">
+        <a class="logo" href="#homePage">Tabrez<span>.</span></a>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/syed-tabrez-pasha-s-295b8a114/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/tabrezcool6" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com/tabrezcool6" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.facebook.com/syed.tabrez.3382/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <p>© <span id="year"></span> Syed Tabrez Pasha S. All Rights Reserved.</p>
       </div>
-    </Footer>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
-
