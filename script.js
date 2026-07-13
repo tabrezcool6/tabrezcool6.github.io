@@ -2,9 +2,25 @@
 $(document).ready(function(){
 
     $('.class-menu-btn').click(function(){
-        
+
         $('.navBar .menu').toggle("active");
-    });  
+    });
+
+    // Hamburger menu for small screens (<= 360px)
+    $('.mobile-menu-btn').click(function(){
+        $('.navBar .menu').toggleClass('show');
+        $(this).toggleClass('open');
+    });
+
+    // Clicking any menu option hides the menu and shows the hamburger icon back,
+    // and keeps the selected option highlighted in black
+    $('.navBar .menu .nav-btn a').click(function(){
+        $('.navBar .menu .nav-btn a').removeClass('active');
+        $(this).addClass('active');
+
+        $('.navBar .menu').removeClass('show');
+        $('.mobile-menu-btn').removeClass('open');
+    });
 
 });
 
