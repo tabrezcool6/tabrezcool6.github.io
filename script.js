@@ -99,4 +99,36 @@
     }
     requestAnimationFrame(tick);
   }
+
+  // ----- Contact form → WhatsApp -----
+  // Destination WhatsApp number, digits only, incl. country code (no "+", spaces or dashes).
+  // TODO: replace with the real number, e.g. "919812345678".
+  const WHATSAPP_NUMBER = "919945989643";
+
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = (document.getElementById("cfName").value || "").trim();
+      const email = (document.getElementById("cfEmail").value || "").trim();
+      const subject = (document.getElementById("cfSubject").value || "").trim();
+      const message = (document.getElementById("cfMessage").value || "").trim();
+
+      if (!name || !email || !subject || !message) return;
+
+      // Build the message template
+      const text =
+        "Hello Syed, I'd like to get in touch.\n\n" +
+        "*Name:* " + name + "\n" +
+        "*Email:* " + email + "\n" +
+        "*Subject:* " + subject + "\n" +
+        "*Message:*" + message;
+
+      const url =
+        "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(text);
+
+      window.open(url, "_blank", "noopener");
+    });
+  }
 })();
