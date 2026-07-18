@@ -681,10 +681,12 @@ a.text-1:hover { color: var(--primary-dark); }
   background: linear-gradient(160deg, var(--primary-soft), transparent);
   border-radius: 14px;
   margin-bottom: 16px;
+  overflow: hidden;
 }
 .card-img img {
   max-width: 90px;
   max-height: 100px;
+  border-radius: 14px;
   transition: transform 0.4s var(--ease);
 }
 .card:hover .card-img img { transform: scale(1.08); }
