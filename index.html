@@ -96,8 +96,8 @@
             I'm a <span>Senior Flutter Engineer</span>
           </div>
           <p class="hero-sub reveal">
-            Founder &amp; CEO of
-            <a href="https://sameens.com" target="_blank" rel="noopener"
+            Founder &amp; Lead Engineer at
+            <a href="https://staging.sameens.com" target="_blank" rel="noopener"
               >Sameens</a
             >. Currently working at Rokkun Systems on
             <a href="https://gorentify.com" target="_blank" rel="noopener"
@@ -219,33 +219,49 @@
               <div class="tl-head">
                 <a
                   class="text-1"
-                  href="https://sameens.com"
+                  href="http://staging.sameens.com"
                   target="_blank"
                   rel="noopener"
-                  >Founder &amp; CEO — Sameens</a
+                  >Founder &amp; Lead Engineer — Sameens</a
                 >
                 <span class="tl-date">Oct 2023 – Present</span>
               </div>
               <div class="tl-place">Bengaluru, Karnataka</div>
               <p class="text-3">
-                Sameen Collections is your go-to online destination for premium
-                women's bags, clutches and other accessories. Our website and
-                mobile app offer a curated collection of stylish, high-quality
-                accessories designed to complement every woman's unique style
-                and needs. Whether you're looking for the perfect evening
-                clutch, an everyday handbag, or something in between, we provide
-                a seamless shopping experience with a diverse range of options
-                to suit all occasions.<br />With a focus on quality,
-                craftsmanship, and trendy designs, we aim to empower women to
-                express their personal style confidently. Our user-friendly
-                platform ensures easy browsing, secure checkout, and fast
-                delivery, bringing the best of fashion directly to your
-                doorstep.
+                Founded and built Sameens, an online store for bags and
+                accessories, as two Flutter apps: a customer storefront for
+                Android, iOS and web from a single codebase, and a Flutter Web
+                admin dashboard for products, orders, transactions, customers,
+                notifications and analytics. Built the full purchase flow —
+                catalogue, cart, Razorpay checkout, order tracking and PDF
+                invoices — with one shared invoice renderer so the admin and
+                customer always see the identical document. Customers get an
+                order confirmation email through Brevo. The dashboard also has
+                an internal chatbot powered by Gemini 3.7 Flash and a feedback
+                system where admins and managers can raise requirements, bugs
+                and enhancement requests.<br /><strong>Tech stack:</strong>
+                Flutter, Dart, Firebase (Firestore), Google Apps Script backend,
+                Razorpay, Brevo, Gemini 3.7 Flash, flutter_bloc, get_it,
+                fpdart.<br /><strong>Approach:</strong>
+                Both apps follow the same clean architecture, with BLoC for
+                state, dependency injection and typed error handling. Payment
+                secrets and all privileged writes live on the Apps Script
+                backend, never in the client. A three-tier role model (super
+                admin / admin / manager) is enforced both in the UI and on the
+                server. Dev, staging and prod build flavors each point to their
+                own Firebase project and backend, with a visible banner on
+                non-prod builds. Deployments run through GitHub Actions CI/CD
+                pipelines that authenticate with Google service accounts. Backed
+                by 300+ unit, bloc and widget tests, including layout tests
+                across screen sizes and text scales, and nine architecture and
+                operations guides.
               </p>
               <div class="tl-tags">
-                <span>Flutter</span><span>PHP</span><span>SQL</span
-                ><span>Software Development</span><span>Project Management</span
-                ><span>API Integration</span><span>State Management</span>
+                <span>Flutter</span><span>Dart</span><span>Firebase</span
+                ><span>Google Apps Script</span><span>Razorpay</span
+                ><span>Clean Architecture</span><span>BLoC</span
+                ><span>GitHub Actions</span><span>Gemini AI</span
+                ><span>Brevo</span><span>Testing</span>
               </div>
             </div>
           </div>
@@ -321,7 +337,7 @@
               <div class="tl-head">
                 <a
                   class="text-1"
-                  href="http://sameens.com"
+                  href="http://staging.sameens.com"
                   target="_blank"
                   rel="noopener"
                   >Sales Associate — Sameer Collections</a
@@ -551,7 +567,7 @@
         <div class="projects-content">
           <a
             class="card reveal"
-            href="https://sameens.com"
+            href="http://staging.sameens.com"
             target="_blank"
             rel="noopener"
           >
@@ -559,10 +575,10 @@
               <div class="card-img">
                 <img src="./Media/sameens-logo.png" alt="Sameen Collections" />
               </div>
-              <h3>Sameens<span>Flutter</span></h3>
+              <h3>Sameens - Store<span>Website</span></h3>
               <p>
-                A mobile and web e-commerce app built using Flutter and an SQL
-                database, delivering a seamless shopping experience.
+                A mobile and web e-commerce app built using Flutter and App
+                scripts backend, delivering a seamless shopping experience.
               </p>
               <span class="card-link"
                 >Visit site <i class="fa-solid fa-arrow-right"></i
@@ -570,6 +586,72 @@
             </div>
           </a>
 
+          <a
+            class="card reveal"
+            href="https://staging-admin.sameens.com"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="box">
+              <div class="card-img">
+                <img
+                  src="./Media/sameens-logo.png"
+                  alt="Sameens Admin Dashboard"
+                />
+              </div>
+              <h3>Sameens - Dashboard<span>Website</span></h3>
+              <p>
+                An admin dashboard for managing products, orders, transactions,
+                customers and analytics, with role-based access. Built with
+                Flutter Web, Firebase and a Google Apps Script backend.
+              </p>
+              <span class="card-link"
+                >Visit site <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+
+          <a
+            class="card reveal"
+            href="https://play.google.com/store/apps/details?id=com.rentify.rentifyApp&hl=en_IN"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="box">
+              <div class="card-img">
+                <img src="./Media/rentify-logo.png" alt="Rentify" />
+              </div>
+              <h3>Rentify <span>Mobile</span></h3>
+              <p>
+                A rental marketplace app that connects tenants and owners,
+                making it easy to list, browse and rent properties.
+              </p>
+              <span class="card-link"
+                >View on Play Store <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+
+          <a
+            class="card reveal"
+            href="https://play.google.com/store/apps/details?id=com.diamwaterproject&hl=en_IN"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="box">
+              <div class="card-img">
+                <img src="./Media/nama-logo.png" alt="Nama Water" />
+              </div>
+              <h3>Nama Water <span>Mobile</span></h3>
+              <p>
+                A water services app that lets customers manage their accounts,
+                view bills and handle water-related requests on the go.
+              </p>
+              <span class="card-link"
+                >View on Play Store <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
           <a
             class="card reveal"
             href="https://play.google.com/store/apps/details?id=com.xsar.handwriter"
@@ -631,48 +713,6 @@
               </p>
               <span class="card-link"
                 >View on GitHub <i class="fa-solid fa-arrow-right"></i
-              ></span>
-            </div>
-          </a>
-
-          <a
-            class="card reveal"
-            href="https://play.google.com/store/apps/details?id=com.diamwaterproject&hl=en_IN"
-            target="_blank"
-            rel="noopener"
-          >
-            <div class="box">
-              <div class="card-img">
-                <img src="./Media/nama-logo.png" alt="Nama Water" />
-              </div>
-              <h3>Nama Water <span>Mobile</span></h3>
-              <p>
-                A water services app that lets customers manage their accounts,
-                view bills and handle water-related requests on the go.
-              </p>
-              <span class="card-link"
-                >View on Play Store <i class="fa-solid fa-arrow-right"></i
-              ></span>
-            </div>
-          </a>
-
-          <a
-            class="card reveal"
-            href="https://play.google.com/store/apps/details?id=com.rentify.rentifyApp&hl=en_IN"
-            target="_blank"
-            rel="noopener"
-          >
-            <div class="box">
-              <div class="card-img">
-                <img src="./Media/rentify-logo.png" alt="Rentify" />
-              </div>
-              <h3>Rentify <span>Mobile</span></h3>
-              <p>
-                A rental marketplace app that connects tenants and owners,
-                making it easy to list, browse and rent properties.
-              </p>
-              <span class="card-link"
-                >View on Play Store <i class="fa-solid fa-arrow-right"></i
               ></span>
             </div>
           </a>
